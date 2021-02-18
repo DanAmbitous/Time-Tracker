@@ -1,3 +1,7 @@
+.stopwatch-button, #timer-cancel {
+    display:none;
+}
+
 button {
     width:100px;
 }

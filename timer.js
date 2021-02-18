@@ -1,5 +1,6 @@
 $("#timer").click(function() {
-    let input = Number(prompt("Please input seconds here"));
+    let input = Number($("input").val());
+    $("input").val(" ");
 
     let result = isValid(input);
     if(!result.status) {
@@ -23,7 +24,8 @@ $("#timer-cancel").click(function() {
 })
 
 $("#stopwatch").click(function() {
-    let input = Number(prompt("Please input seconds here"));
+    let input = Number($("input").val());
+    $("input").val(" ");
 
     let result = isValid(input);
     if(!result.status) {
